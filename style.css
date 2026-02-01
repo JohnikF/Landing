@@ -98,41 +98,123 @@ header {
     position: absolute;
     left: -55px;
     top: -100px;
+    animation-name: rotate-move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .circle2 {
     position: absolute;
     right: -40px;
     top: -40px;
+    animation-name: move-left-down;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .circle3 {
     position: absolute;
     left: -50px;
     bottom: -30px;
+    animation-name: move-up-left;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 .circle-bordered {
     position: absolute;
     left: 250px;
     bottom: -30px;
+    animation-name: move-up-left;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .circle-dashed-border {
     position: absolute;
     right: -100px;
     bottom: -180px;
+    animation-name:  rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .triangle {
     position: absolute;
     left: 40%;
     top: 20%;
+    animation-name: move-right;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
 }
 
 .octagon {
     position: absolute;
     top: 65%;
     left: 50%;
+    animation-name: rotate-move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes move-up-left {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(40px, 80px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes move-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(230%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotate-move {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(80px, 200px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(359deg);
+    }
+
+}
+
+@keyframes move-left-down {
+     0% {
+         transform: translate(0,0) rotate(0deg);
+     }
+    50% {
+        transform: translate(-180px, 200px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(359deg);
+    }
 }
 
