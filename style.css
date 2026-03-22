@@ -74,13 +74,13 @@ header {
     text-shadow: 10px 10px 0 #e06161;
 }
 
-.start-section-btn {
+.general-btn {
     background-color: white;
     border-radius: 50px;
     text-decoration: none;
     color: black;
-    height: 71px;
-    width: 200px;
+    width: fit-content;
+    padding: 5px 30px;
     display: block;
     font-size: 30px;
     font-weight: 500;
@@ -316,11 +316,19 @@ hr {
     background-size: cover;
     border: 5px solid #e06161;
     border-radius: 30px;
-    transition: 0.5s;
+    transition: 0.5s ;
 }
 
 .portfolio-cell:hover {
     transform: scale(0.9);
+}
+
+.contact {
+    background: linear-gradient(#db7e7e, #ffc997);
+}
+
+.contact-title {
+    color: white;
 }
 
 @keyframes move-up-left {
