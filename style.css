@@ -8,7 +8,7 @@
 }
 
 .container {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 100px 15px;
 }
@@ -182,6 +182,7 @@ background: linear-gradient(7deg, #db7e7e 18.07%, #ffc997 70%, #ffffff 70%);
 
 .doing-right img {
     margin: 71px 0 0 15px;
+    max-width: 300px;
 }
 
 .doing-title {
@@ -230,7 +231,7 @@ hr {
 }
 
 .advantages-card {
-    width: 800px;
+    max-width: 800px;
     margin: 50px auto;
     box-shadow: 10px 10px 0 #e06161;
     border: 5px solid #ffc997;
@@ -387,6 +388,71 @@ hr {
     }
     100% {
         transform: translate(0, 0) rotate(359deg);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .logo-link {
+        height: 17vh;
+        display: inline-block;
+        line-height: 17vh;
+    }
+
+    .nav-item {
+        display: block;
+    }
+
+    .start-section-text {
+        font-size: 40px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    .general-btn {
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .doing-left {
+        display: block;
+        width: 100%;
+    }
+
+    .doing-right {
+        display: block;
+        width: 100%;
+    }
+
+    .services-card {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .advantages-card {
+        width: 100%;
+    }
+
+    .adv-card1 {
+        position: static;
+    }
+
+    .adv-card2 {
+        position: static;
+    }
+
+    .adv-card3 {
+        position: static;
     }
 }
 
