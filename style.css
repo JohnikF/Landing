@@ -249,16 +249,19 @@ hr {
 .adv-card1 {
     position: relative;
     left: -100px;
+    z-index: 70;
 }
 
 .adv-card2 {
     position: relative;
     left: 100px;
+    z-index: 70;
 }
 
 .adv-card3 {
     position: relative;
     left: -80px;
+    z-index: 70;
 }
 
 .advantages-bg {
@@ -267,7 +270,7 @@ hr {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -11;
 }
 
 .advantages-content {
@@ -288,6 +291,7 @@ hr {
     position: sticky;
     top: 40%;
     left: 0;
+    z-index: -100;
 }
 
 .portfolio-table {
@@ -318,6 +322,7 @@ hr {
     border: 5px solid #e06161;
     border-radius: 30px;
     transition: 0.5s ;
+
 }
 
 .portfolio-cell:hover {
